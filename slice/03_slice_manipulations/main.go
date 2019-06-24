@@ -42,13 +42,12 @@ func main() {
 	//f. Get the length of the current slice:
 	fmt.Println("Length: ", len(s))
 
-	//f. Get the capacity of the current slice:
-	fmt.Println("Capacity: ", cap(s))
+	//g. Get the capacity of the current slice:
+	fmt.Println("Capacity: ", cap(s)) //this is give "7"
 
-	//g. Copy one slice to another:
+	//h. Copy one slice to another:
 	//Make a slice with the same length as "s":
 	d := make([]int, len(s))
 	copy(d, s)
-
 	fmt.Println("This is the new slice: ", d)
 }
