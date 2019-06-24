@@ -28,4 +28,11 @@ func main() {
 	for key, value := range currency {
 		fmt.Printf("%v might be equal to: %v\n", key, value)
 	}
+
+	if value, ok := currency["USD"]; ok { //comma ok idiom
+		fmt.Printf("The value %s is present\n", value)
+		fmt.Println(ok) //This will print "true"
+	} else {
+		fmt.Println("We could not find that key")
+	}
 }
