@@ -4,16 +4,6 @@ import "fmt"
 
 func main() {
 
-	//Function scope slice:
-
-	//EXAMPLE 1:
-	integerSlice := []int{10, 20, 30, 40, 50}
-	stringSlice := []string{"first", "second", "third", "fourth"}
-	fmt.Println("This is the integer slice: ", integerSlice)
-	fmt.Println("This is the string slice: ", stringSlice)
-
-	// EXAMPLE 2:
-	// We can also define slice using the "make" builtin function
 	s := make([]int, 4)
 	s[0] = 10
 	s[1] = 20
@@ -45,7 +35,7 @@ func main() {
 
 	//Get particular elements from the slice:
 	//We now have this slice: [10 20 70 50 60 70]
-	//To get the 2nd to the 4th element, we do:
+	//To get the 2nd(index 1) to the 4th(index 3) element, we do:
 	s = s[1:4]
 	fmt.Println("Slice with second to fourth element: ", s)
 
