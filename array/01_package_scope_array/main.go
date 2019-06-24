@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+//Package scope array definition
 var integerArray [5]int
+
+var stringArray [4]string
 
 func main() {
 
@@ -12,6 +15,13 @@ func main() {
 	integerArray[3] = 40
 	integerArray[4] = 50
 
-	fmt.Println(integerArray)
+	fmt.Println("This is the integer Array: ", integerArray)
+
+	stringArray[0] = "first"
+	stringArray[1] = "second"
+	stringArray[2] = "third"
+	stringArray[3] = "fourth"
+
+	fmt.Println("This is the string array: ", stringArray)
 
 }
