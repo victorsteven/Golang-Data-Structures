@@ -33,10 +33,22 @@ func main() {
 	s[2] = s[len(s)-1]
 	fmt.Println("Updated Slice with element replaced: ", s)
 
-	//Get particular elements from the slice:
+	//e. Get particular elements from the slice:
 	//We now have this slice: [10 20 70 50 60 70]
 	//To get the 2nd(index 1) to the 4th(index 3) element, we do:
 	s = s[1:4]
 	fmt.Println("Slice with second to fourth element: ", s)
 
+	//f. Get the length of the current slice:
+	fmt.Println("Length: ", len(s))
+
+	//f. Get the capacity of the current slice:
+	fmt.Println("Capacity: ", cap(s))
+
+	//g. Copy one slice to another:
+	//Make a slice with the same length as "s":
+	d := make([]int, len(s))
+	copy(d, s)
+
+	fmt.Println("This is the new slice: ", d)
 }
