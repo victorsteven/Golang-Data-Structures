@@ -13,7 +13,7 @@ func main() {
 	for key, value := range currency {
 		fmt.Printf("Currency Name: %v\n", key)
 		for k, v := range value {
-			fmt.Printf("\t Currency code: %v\n\t\t Currency Ranking: %v\n", k, v)
+			fmt.Printf("\t Currency Code: %v\n\t\t Currency Ranking: %v\n", k, v)
 		}
 	}
 }
